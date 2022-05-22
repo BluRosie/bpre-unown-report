@@ -477,21 +477,81 @@ void ItemUseOutOfBattle_UnownReport(u8 taskId) {
 
 void GenerateUnownFormSelectively(u16 level)
 {
-    u32 personality, denominator;
-    
-    if (UnownCount() >= (UNOWN_FORMS - 2))
-        denominator = 28; // ! ?
-    else if (FlagGet(FLAG_PUZZLE_HO_OH))
-        denominator = 26; // W X Y Z
-    else if (FlagGet(FLAG_PUZZLE_AERODACTYL))
-        denominator = 22; // R S T U V
-    else if (FlagGet(FLAG_PUZZLE_OMANYTE))
-        denominator = 17; // K L M N O P Q
-    else if (FlagGet(FLAG_PUZZLE_KABUTO))
-        denominator = 10; // A B C D E F G H I J
-    else
-        denominator = 1; // A
+    u32 personality, listlength = 0;
+    u32 letterlist[28] = {28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28};
 
-    personality = GenerateUnownPersonalityByLetter(Random() % denominator);
+    if (UnownCount() >= (UNOWN_FORMS - 2))
+    {
+        letterlist[listlength] = 27; // ?
+        listlength++;
+        letterlist[listlength] = 26; // !
+        listlength++;
+    }
+    if (FlagGet(FLAG_PUZZLE_HO_OH))
+    {
+        letterlist[listlength] = 25; // Z
+        listlength++;
+        letterlist[listlength] = 24; // Y
+        listlength++;
+        letterlist[listlength] = 23; // X
+        listlength++;
+        letterlist[listlength] = 22; // W
+        listlength++;
+    }
+    if (FlagGet(FLAG_PUZZLE_AERODACTYL))
+    {
+        letterlist[listlength] = 21; // V
+        listlength++;
+        letterlist[listlength] = 20; // U
+        listlength++;
+        letterlist[listlength] = 19; // T
+        listlength++;
+        letterlist[listlength] = 18; // S
+        listlength++;
+        letterlist[listlength] = 17; // R
+        listlength++;
+    }
+    if (FlagGet(FLAG_PUZZLE_OMANYTE))
+    {
+        letterlist[listlength] = 16; // Q
+        listlength++;
+        letterlist[listlength] = 15; // P
+        listlength++;
+        letterlist[listlength] = 14; // O
+        listlength++;
+        letterlist[listlength] = 13; // N
+        listlength++;
+        letterlist[listlength] = 12; // M
+        listlength++;
+        letterlist[listlength] = 11; // L
+        listlength++;
+        letterlist[listlength] = 10; // K
+        listlength++;
+    }
+    if (FlagGet(FLAG_PUZZLE_KABUTO))
+    {
+        letterlist[listlength] = 9; // J
+        listlength++;
+        letterlist[listlength] = 8; // I
+        listlength++;
+        letterlist[listlength] = 7; // H
+        listlength++;
+        letterlist[listlength] = 6; // G
+        listlength++;
+        letterlist[listlength] = 5; // F
+        listlength++;
+        letterlist[listlength] = 4; // E
+        listlength++;
+        letterlist[listlength] = 3; // D
+        listlength++;
+        letterlist[listlength] = 2; // C
+        listlength++;
+        letterlist[listlength] = 1; // B
+        listlength++;
+        letterlist[listlength] = 0; // A
+        listlength++;
+    }
+
+    personality = GenerateUnownPersonalityByLetter(letterlist[Random() % listlength]);
     CreateMon(&gEnemyParty[0], SPECIES_UNOWN, level, 32, TRUE, personality, FALSE, 0);
 }

@@ -1,0 +1,111 @@
+#org @gText_PlayersUnownReport
+Unown Report
+
+#org @gText_CurrentKinds
+Number of Unown\nCurrent Kinds: [BUFFER1]
+
+#org @gText_Instructions
+[A_BUTTON][DPAD]PAGE [B_BUTTON]QUIT
+
+#org @gText_UnownA
+Anger
+
+#org @gText_UnownB
+Bear
+
+#org @gText_UnownC
+Chase
+
+#org @gText_UnownD
+Direct
+
+#org @gText_UnownE
+Engage
+
+#org @gText_UnownF
+Find
+
+#org @gText_UnownG
+Give
+
+#org @gText_UnownH
+Help
+
+#org @gText_UnownI
+Increase
+
+#org @gText_UnownJ
+Join
+
+#org @gText_UnownK
+Keep
+
+#org @gText_UnownL
+Laugh
+
+#org @gText_UnownM
+Make
+
+#org @gText_UnownN
+Nuzzle
+
+#org @gText_UnownO
+Observe
+
+#org @gText_UnownP
+Perform
+
+#org @gText_UnownQ
+Quicken
+
+#org @gText_UnownR
+Reassure
+
+#org @gText_UnownS
+Search
+
+#org @gText_UnownT
+Tell
+
+#org @gText_UnownU
+Undo
+
+#org @gText_UnownV
+Vanish
+
+#org @gText_UnownW
+Want
+
+#org @gText_UnownX
+XXXXX
+
+#org @gText_UnownY
+Yield
+
+#org @gText_UnownZ
+Zoom
+
+#org @gText_UnownQuestionMark
+?????
+
+#org @gText_UnownExclamationMark
+!!!!!
+
+#org @gText_Report1
+Met Will in the Ikos Ruins. He\nsaid the Ruins remind him of a\nplace in the Johto region. The\nUnown there are more cautious.\nWill said there may be hidden\nareas undiscovered around here.
+
+#org @gText_Report2
+Approached a chamber deep in\nIgnis Valley with Ho-Oh by my\nside. There were three statues\nin the room, which glowed as we\napproached! Could this be what\nWill was looking for?
+
+#org @gText_Report3
+Presented the Rainbow Wing to\nthe statues. The heat made them\nreanimate! They were Pokemon all\nalong! They each fled, but the\nred one didn't seem to get far.\nMaybe it's near the Ikos Ruins?
+
+#org @gText_Report4
+The red Pokemon is called Entei.\nIt hid in another chamber in\nthe Ikos Ruins, but I coaxed it\nout by approaching with a team\nof Unown spelling its name!\nThe others will be hard to find.
+
+#org @gText_Report5
+Tracked the other two Pokemon\ndown. Suicune and Raikou are the\nnames of the blue and yellow\nPokemon. What could the link be\nbetween these three Pokemon,\nHo-Oh, and the Unown?
+
+#org @gText_Report6
+Will was pleased to learn of\nthe secrets of the Ikos Ruins.\nWe agreed to have a rematch in\nthe depths of the Ferre Ruins,\nanother place he says he finds\nfascinating. This was fun!
+

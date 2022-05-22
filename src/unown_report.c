@@ -1,31 +1,31 @@
-#include "global.h"
+#include "../include/global.h"
 
-#include "alloc.h"
-#include "bag.h"
-#include "bg.h"
-#include "decompress.h"
-#include "event_data.h"
-#include "gpu_regs.h"
-#include "international_string_util.h"
-#include "list_menu.h"
-#include "main.h"
-#include "overworld.h"
-#include "palette.h"
-#include "pokedex.h"
-#include "pokemon.h"
-#include "pokemon_icon.h"
-#include "rgb.h"
-#include "scanline_effect.h"
-#include "sound.h"
-#include "string_util.h"
-#include "strings.h"
-#include "window.h"
+#include "../include/alloc.h"
+#include "../include/bag.h"
+#include "../include/bg.h"
+#include "../include/decompress.h"
+#include "../include/event_data.h"
+#include "../include/gpu_regs.h"
+#include "../include/international_string_util.h"
+#include "../include/list_menu.h"
+#include "../include/main.h"
+#include "../include/overworld.h"
+#include "../include/palette.h"
+#include "../include/pokedex.h"
+#include "../include/pokemon.h"
+#include "../include/pokemon_icon.h"
+#include "../include/rgb.h"
+#include "../include/scanline_effect.h"
+#include "../include/sound.h"
+#include "../include/string_util.h"
+#include "../include/strings.h"
+#include "../include/window.h"
 
-#include "unown_report.h"
+#include "../include/unown_report.h"
 
-#include "constants/songs.h"
-#include "constants/species.h"
-#include "graphics/unown.c"
+#include "../include/constants/songs.h"
+#include "../include/constants/species.h"
+#include "../include/graphics/unown.c"
 
 static const struct BgTemplate sUnownReportBgTemplates[3] = {
     { // Unown background
@@ -472,4 +472,24 @@ void ItemUseOutOfBattle_UnownReport(u8 taskId) {
         SetBagCallback(StartUnownReportFromBag);
         ReturnFromItemToBag(taskId);
     }
+}
+
+
+void GenerateUnownFormSelectively(u16 level)
+{
+    u32 personality, denominator;
+    
+    if (UnownCount() >= (UNOWN_FORMS - 2))
+        denominator = 28; // ! ?
+    else if (FlagGet(FLAG_PUZZLE_HO_OH))
+        denominator = 26; // W X Y Z
+    else if (FlagGet(FLAG_PUZZLE_AERODACTYL))
+        denominator = 22; // R S T U V
+    else if (FlagGet(FLAG_PUZZLE_OMANYTE))
+        denominator = 17; // K L M N O P Q
+    else //if (FlagGet(FLAG_PUZZLE_KABUTO))
+        denominator = 10; // A B C D E F G H I J
+
+    personality = GenerateUnownPersonalityByLetter(Random() % denominator);
+    CreateMon(&gEnemyParty[0], SPECIES_UNOWN, level, 32, TRUE, personality, FALSE, 0);
 }

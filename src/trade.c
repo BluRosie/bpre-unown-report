@@ -1,13 +1,13 @@
-#include "global.h"
+#include "../include/global.h"
 
-#include "pokedex.h"
-#include "pokemon.h"
-#include "pokemon_icon.h"
-#include "unown_report.h"
+#include "../include/pokedex.h"
+#include "../include/pokemon.h"
+#include "../include/pokemon_icon.h"
+#include "../include/unown_report.h"
 
-#include "trade.h"
+#include "../include/trade.h"
 
-#include "constants/species.h"
+#include "../include/constants/species.h"
 
 void SetTradedMonPokedexFlags(u8 partyIdx) {
     struct Pokemon *mon = &gPlayerParty[partyIdx];

@@ -47,4 +47,10 @@ void Task_UnownReportFromOW(u8 taskId);
 void StartUnownReportFromBag(void);
 void ItemUseOutOfBattle_UnownReport(u8 taskId);
 
+
+u32 GenerateUnownPersonalityByLetter(u8 letter);
+u16 Random();
+u32 CreateMon(void *pokemon, u16 species, u16 level, u32 ivs, u32 use_personality, u32 personality, u32 use_tid, u32 tid);
+
+
 #endif // GUARD_UNOWN_REPORT_H

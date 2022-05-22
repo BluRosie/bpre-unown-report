@@ -8,9 +8,7 @@ This ports that item to FR v1.0 ROMs.
 
 ### Build Instructions
 
-See [here](https://gist.github.com/Zeturic/db1611cc7b17c3140f9b9af32e1b596b) for the prerequisites and help in installing them.
-
-Not included in the above link is the dependency of [grit](https://www.coranac.com/man/grit/html/grit.htm), which you should download and add to your PATH.
+Build the same as the CFRU:  `python scripts/make.py`
 
 #### Cloning the repo and building the tools
 
@@ -24,11 +22,13 @@ $ ./build_tools.sh
 
 #### Adding your ROM
 
-Copy your ROM to this directory and rename it `rom.gba`.
+Copy your ROM to this directory and rename it `BPRE0.gba`.
 
 #### Configuration
 
 ##### Compile Time Constants
+
+TODO:  revise a lot of this
 
 Open `config.mk` in a text editor to set some compile-time configuration.
 

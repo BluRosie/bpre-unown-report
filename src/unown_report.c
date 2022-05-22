@@ -212,7 +212,7 @@ u8 GetNewPage(u8 page, s8 SwapDirection) {
             }
         } else {
             for (u8 reportPage = page + SwapDirection; reportPage <= LAST_PAGE; reportPage += SwapDirection) {
-                if (FlagGet(ReportPages[reportPage - FIRST_REPORT_PAGE].flag)) {
+                if (count >= ReportPages[reportPage - FIRST_REPORT_PAGE].quantity) {
                     return reportPage;
                 }
             }
@@ -228,7 +228,7 @@ u8 GetNewPage(u8 page, s8 SwapDirection) {
             }
         } else if (page > FIRST_REPORT_PAGE) {
             for (u8 reportPage = page + SwapDirection; reportPage >= FIRST_REPORT_PAGE; reportPage += SwapDirection) {
-                if (FlagGet(ReportPages[reportPage - FIRST_REPORT_PAGE].flag)) {
+                if (count >= ReportPages[reportPage - FIRST_REPORT_PAGE].quantity) {
                     return reportPage;
                 }
             }

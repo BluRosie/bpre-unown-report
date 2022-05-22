@@ -5,7 +5,7 @@ Unown Report
 Number of Unown\nCurrent Kinds: [BUFFER1]
 
 #org @gText_Instructions
-[A_BUTTON][DPAD]PAGE [B_BUTTON]QUIT
+[A_BUTTON][DPAD_LEFT_RIGHT]PAGE [B_BUTTON]QUIT
 
 #org @gText_UnownA
 Anger
@@ -92,20 +92,19 @@ Zoom
 !!!!!
 
 #org @gText_Report1
-Met Will in the Ikos Ruins. He\nsaid the Ruins remind him of a\nplace in the Johto region. The\nUnown there are more cautious.\nWill said there may be hidden\nareas undiscovered around here.
+The Unown puzzle, when solved,\nopened a hole in the ground.\nThe room I dropped into had a\nstatue, and suddenly Unown\nwere appearing. The puzzle\nmust have been some key.
 
 #org @gText_Report2
-Approached a chamber deep in\nIgnis Valley with Ho-Oh by my\nside. There were three statues\nin the room, which glowed as we\napproached! Could this be what\nWill was looking for?
+Turning on the radio in the\nruins, you can hear eerie and\nstrange transmissions. Do Unown\ncommunicate via radio waves?\nMore Unown woke up when the\nsecond puzzle was complete.
 
 #org @gText_Report3
-Presented the Rainbow Wing to\nthe statues. The heat made them\nreanimate! They were Pokemon all\nalong! They each fled, but the\nred one didn't seem to get far.\nMaybe it's near the Ikos Ruins?
+When the various Unown are\narranged in order, they start\nto make sense. In nature, they\nappear random, but there is a\nspecific order. The Research\nStaff is in charge of this.
 
 #org @gText_Report4
-The red Pokemon is called Entei.\nIt hid in another chamber in\nthe Ikos Ruins, but I coaxed it\nout by approaching with a team\nof Unown spelling its name!\nThe others will be hard to find.
+Scratched on the floor of the\nruins are Unown letters. The\nroom is a huge discovery! The\nresearchers are excited and are\ngoing to check it out. Two more\nUnown have been discovered...
 
 #org @gText_Report5
-Tracked the other two Pokemon\ndown. Suicune and Raikou are the\nnames of the blue and yellow\nPokemon. What could the link be\nbetween these three Pokemon,\nHo-Oh, and the Unown?
+The characters found scratched\non the floor of the room are as\nfollows:\nOUR FRIENDS LOOK\nUP AND HEARTILY\nCONGRATULATE US
 
 #org @gText_Report6
-Will was pleased to learn of\nthe secrets of the Ikos Ruins.\nWe agreed to have a rematch in\nthe depths of the Ferre Ruins,\nanother place he says he finds\nfascinating. This was fun!
-
+In the past, Unown lived with\nancient humans. The Unown are\ntimid, so they don't leave the\nruins. The people who wish for\nUnown and humans to coexist\nare said to have disappeared.

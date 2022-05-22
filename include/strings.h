@@ -5,7 +5,7 @@
 
 struct ReportPage {
     const u8 *str;
-    const u16 flag;
+    const u16 quantity;
 };
 
 extern const u8 gText_PlayersUnownReport[];
@@ -56,12 +56,12 @@ static const u8 *UnownStrings[] = {
 };
 
 const struct ReportPage ReportPages[] = {
-    { gText_Report1, 0 }, // 1st report page flag isn't checked
-    { gText_Report2, FLAG_REPORT2 },
-    { gText_Report3, FLAG_REPORT3 },
-    { gText_Report4, FLAG_REPORT4 },
-    { gText_Report5, FLAG_REPORT5 },
-    { gText_Report6, FLAG_REPORT6 },
+    { gText_Report1,  1 }, // change this to be unown quantity instead
+    { gText_Report2, 11 },
+    { gText_Report3, 15 },
+    { gText_Report4, 20 },
+    { gText_Report5, 26 },
+    { gText_Report6, 28 },
 };
 
 #define LAST_PAGE (4 + (sizeof(ReportPages) / sizeof(struct ReportPage)))

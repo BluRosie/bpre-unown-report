@@ -487,8 +487,10 @@ void GenerateUnownFormSelectively(u16 level)
         denominator = 22; // R S T U V
     else if (FlagGet(FLAG_PUZZLE_OMANYTE))
         denominator = 17; // K L M N O P Q
-    else //if (FlagGet(FLAG_PUZZLE_KABUTO))
+    else if (FlagGet(FLAG_PUZZLE_KABUTO))
         denominator = 10; // A B C D E F G H I J
+    else
+        denominator = 1; // A
 
     personality = GenerateUnownPersonalityByLetter(Random() % denominator);
     CreateMon(&gEnemyParty[0], SPECIES_UNOWN, level, 32, TRUE, personality, FALSE, 0);

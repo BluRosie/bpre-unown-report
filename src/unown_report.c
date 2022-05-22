@@ -135,6 +135,8 @@ bool32 UnownFormIsCaught(u8 form) {
     return (CaughtUnown & (1 << form));
 }
 
+extern u16 Var800D;
+
 u8 UnownCount(void) {
     u8 UniqueForms = 0;
     for (u8 form = 0; form < UNOWN_FORMS; form++) {
@@ -142,6 +144,8 @@ u8 UnownCount(void) {
             UniqueForms++;
         }
     }
+    
+    Var800D = UniqueForms;
 
     return UniqueForms;
 }
